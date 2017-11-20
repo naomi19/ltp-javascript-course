@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+            #touchTarget{
+                background-color: rgb(150,0,0);
+                color: rgb(255,255,255);
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+            }
+        </style>
+        <script>
+            window.onload  =  function()
+            {
+                document.getElementById('touchTarget').addEventListener('click', respond);
+            }
+            
+            function respond(e)
+            {
+                //alert("You clicked me!");
+                document.getElementById('touchTarget').style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="touchTarget"><h1>Click Me!</h1></div>
+    </body>
+</html>

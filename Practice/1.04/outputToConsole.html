@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //var clicks = 0;
+            
+            window.onload = function()
+            {
+                console.log("window.onload run...");
+                
+                document.getElementById('myButton').addEventListener('click', respond);
+            }
+            
+            function respond(e)
+            {
+                //clicks++;
+                //console.log("Button Pressed" + clicks + "times.");
+                console.log("Button Pressed");
+            }
+        </script>
+    </head>
+    <body>
+        <button id="myButton">Press Me</button>
+    </body>
+</html>
