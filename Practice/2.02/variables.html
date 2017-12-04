@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var age; //Public or script scope
+            
+            window.onload = function()
+            {
+                var score; //Declaration(function scope)
+                score = 1000; //Initialize
+                
+                age = 42; //Combined declaration and initialization
+                out();
+            }
+            
+            function out()
+            {
+                document.getElementById('result').innerHTML = "Age: " + age;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
