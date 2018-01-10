@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Endless Loops</title>
+        <script>
+            window.onload=function()
+            {
+                var x = 0;
+                while (x > -1)
+                {
+                    x=x * x;
+                    /*document.getElementById('result').innerHTML += x + "</br>";*/
+                    console.log(x);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>

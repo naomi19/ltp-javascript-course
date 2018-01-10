@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload=function()
+            {
+                
+                document.getElementById('btnOne').addEventListener('click', btnClicked);
+                document.getElementById('btnTwo').addEventListener('click', btnClicked);
+                
+                function btnClicked(e)
+                {
+                    //alert("You pressed a button!")
+                    console.log(e.target.id);
+                    if(e.target.id == "btnOne")
+                        {
+                            alert("You pressed Button One!")
+                        }else
+                            {
+                                alert("You pressed Button Two!")
+                            }
+                }
+                
+                
+                //citizen = true;
+                //age = 17;
+                
+               //if(citizen && age >=18){
+                        //document.getElementById('result').innerHTML = "<h1>You may legally vote</h1>"
+                        
+                    //}
+                //else{
+                       // document.getElementById('result').innerHTML = "<h1>You may NOT legally vote</h1>"
+                    //}
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+        <button id="btnOne">One</button>
+        <button id="btnTwo">Two</button>
+    </body>
+</html>
