@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var btnPress;
+            
+            window.onload = function()
+            {
+                alert("window.onload!")
+                btnPress = document.getElementById('myButton');
+                btnPress.onclick = function()
+                {
+                    alert("Thanks for pressing me!");
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+        <button id="myButton">Press me!</button>
+    </body>
+</html>

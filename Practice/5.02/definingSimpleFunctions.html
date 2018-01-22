@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function greeting()
+            {
+                var resultDiv = document.getElementById('result');
+                resultDiv.innerHTML = "<h1>Greetings!<h1>";
+            }
+            
+            window.onload = function()
+            {
+                //greeting();
+                document.getElementById('btnGreet').addEventListener('click',greeting);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+        <button id="btnGreet">Greet Me!</button>
+    </body>
+</html>

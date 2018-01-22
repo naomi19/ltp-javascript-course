@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function calculate(atBats,hits,walks)
+            {
+                var ba = hits/(atBats-walks);
+                document.getElementById('result').innerHTML = ba;
+            }
+            
+            window.onload = function()
+            {
+                calculate(257,76,10);
+            }
+            
+            /*function calculateDogYears(ageInHumanYears)
+            {
+                var dogYears = ageInHumanYears * 7;
+                document.getElementById('result').innerHTML = "<h1>" + dogYears + "</h1>";
+            }
+            
+            window.onload = function()
+            {
+                calculateDogYears(2);
+            }*/
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
