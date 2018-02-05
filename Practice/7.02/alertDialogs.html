@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function()
+            {
+                document.getElementById('myBtn').addEventListener('click', alertUser);
+            }
+            
+            function alertUser(e)
+            {
+                alert("Button Pressed!")
+                //alert(e.target.id);
+            }
+        </script>
+    </head>
+    <body>
+        <button id="myBtn">Press Me</button>
+    </body>
+</html>
