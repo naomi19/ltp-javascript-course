@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function()
+            {
+                var myString = "Four score and seven years ago.";
+                var n = myString.search("seven");
+                console.log(n);
+                
+                var newString = myString.replace("Four" , "Six");
+                console.log(newString);
+                console.log(myString);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>

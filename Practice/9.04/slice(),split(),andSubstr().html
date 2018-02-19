@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function()
+            {
+                var myString = "Ability is what you're capable of doing. Motivation determines what you do. Attitude determines how well you do it";
+                var newString = myString.slice(0,15);
+                console.log(newString);
+                
+                var csv = "Alex,Tyler,Brianna,Jeremy,Emilie,Abigail,Hannah";
+                var nameArray = csv.split(",");
+                console.log(nameArray);
+                for(var x =0;x < nameArray.length; x++)
+                    {
+                        document.getElementById('result').innerHTML += nameArray[x] + "<br/>";
+                    }
+                
+                var theString = "Well done is better than well said - Benjamin Franklin";
+                console.log(theString.substr(5,3));
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
